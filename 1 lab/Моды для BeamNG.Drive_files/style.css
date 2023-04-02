@@ -1,0 +1,30 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.common_link {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.common_link:hover {
+    color: black;
+}
+
+.main_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_container a{
+    font-size: 16px;
+  font-weight: bold;
+  color: green;
+}

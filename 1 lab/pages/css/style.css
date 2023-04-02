@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 20%), linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 20%);
+    color: white;
+}
+
+.main_header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.main_link {
+    background-color: #131417;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.main_link:hover {
+    color: #42bd3b;
+}
+
+/* общие настройки панели навигации */
+.navigate {
+    min-width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+.navigate li {
+    padding: 10px 0;
+    background-color: #1E1F26;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* общие настройки панели контента */
+.content {
+    /* display: flex; */
+
+    min-width: 200px;
+    background-color: #1E1F26;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 10px 10px 10px 10px;
+
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content_img {
+    float: right;
+    border-radius: 5px;
+    width: 40%;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.content li {
+
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #131417;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.common_link {
+    text-decoration: none;
+    color: white;
+}
+
+.common_link:hover {
+    text-decoration: none;
+    color: #42bd3b;
+}
+
+.content p {
+    text-align: left;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+
+.content table {
+    margin: 10px;
+    width: 100%;
+    background-color: #131417;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main_header {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1F26;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.wrap_page {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    flex: 7;
+}
+
+.navigate {
+    flex: 3;
+}
+
+.slider {
+    width: 100%;
+
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.btn button {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    width: 10%;
+    height: 100%;
+    background-color: #131417;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn button:hover {
+    color: #42bd3b;
+}
+
+
+.button-container {
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    z-index: 9999;
+}
+
+.my-button {
+    background-color: #1E1F26;
+    color: white;
+    border: none;
+    width: 30px;
+
+    height: 50px;
+    font-size: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.my-button:hover {
+    background-color: #42bd3b;
+}
+
+#sideMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #1E1F26;
+    transition: left 0.3s ease-in-out;
+}
+
+#sideMenu.active {
+    left: 0;
+}
+
+.side_menu_container li {
+
+    margin: 20px;
+    padding: 20px;
+    background-color: #131417;
+    border-radius: 5px;
+}
+
+.side_menu_container a {
+
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #131417;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wrap_page {
+        flex-direction: column;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .content_img {
+
+        width: 90%;
+    }
+
+    .navigate {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .button-container {
+        display: none;
+    }
+}
